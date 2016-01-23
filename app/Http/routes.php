@@ -17,6 +17,12 @@ Route::get('/', function () {
    	return view('welcome');
 });
 
+Route::get('hello', function () {
+   
+ 	
+   	return view('hello');
+});
+
 /*Route::pattern('id','[0-9]+');
 Route::get('post/{id?}', function ($id = '0') {
    
