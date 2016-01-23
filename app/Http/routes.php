@@ -36,6 +36,18 @@ Route::get('say', ['as' => 'name',function(){
    	return 'hello';
 }]);
 
+Route::group(['prefix' => 'admin'], function(){
+
+	Route::get('dashboard',function(){
+
+		return 'admin dashboard';
+	});
+	Route::get('account',function(){
+
+	return 'admin account';
+	});
+});
+
 
 /*
 |--------------------------------------------------------------------------
