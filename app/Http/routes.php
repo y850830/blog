@@ -14,13 +14,13 @@
 Route::get('/', function () {
    
  	
-   	return view('welcome');
+   	return view('index');
 });
 
 Route::get('hello', function () {
    
  	
-   	return view('hello');
+   	return view('hello.hello');
 });
 
 /*Route::pattern('id','[0-9]+');
