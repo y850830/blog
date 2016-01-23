@@ -30,11 +30,12 @@ Route::get('hello/{name?}', function ($name = 'everybody') {
    	return 'hello, '.$name;
 });
 
-Route::get('say', ['as' => 'hello',function(){
+Route::get('say', ['as' => 'name',function(){
    
  	
    	return 'hello';
 }]);
+
 
 /*
 |--------------------------------------------------------------------------
