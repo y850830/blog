@@ -17,11 +17,24 @@ Route::get('/', function () {
    	return view('welcome');
 });
 
+Route::pattern('id','[0-9]+');
+Route::get('post/{id?}', function ($id = '0') {
+   
+ 	
+   	return 'id='.$id;
+});
+
 Route::get('hello/{name?}', function ($name = 'everybody') {
    
  	
    	return 'hello, '.$name;
 });
+
+Route::get('say', ['as' => 'hello',function(){
+   
+ 	
+   	return 'hello';
+}]);
 
 /*
 |--------------------------------------------------------------------------
