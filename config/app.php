@@ -151,8 +151,6 @@ return [
 
         Recca0120\Terminal\ServiceProvider::class,
         Recca0120\LaravelTracy\ServiceProvider::class,
-        laravelcollective\html\ServiceProvider::class,
-        doctrine\dbal\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
