@@ -38,8 +38,11 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
-                <a href="{{route('name')}}">Say hello!</a>
+                <div class="title">sample blog</div>
+                <a href="{{route('all')}}">all!</a>
+                <a href="{{route('hot')}}">hot!</a>
+                <a href="{{route('featured')}}">featured!</a>
+                <a href="{{route('random')}}">random!</a>
             </div>
         </div>
     </body>

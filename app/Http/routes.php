@@ -17,7 +17,7 @@ Route::get('/', function () {
    	return view('welcome');
 });
 
-Route::pattern('id','[0-9]+');
+/*Route::pattern('id','[0-9]+');
 Route::get('post/{id?}', function ($id = '0') {
    
  	
@@ -34,18 +34,29 @@ Route::get('say', ['as' => 'name',function(){
    
  	
    	return 'hello';
-}]);
+}]);*/
 
-Route::group(['prefix' => 'admin'], function(){
+Route::group(['prefix' => '/'], function(){
 
-	Route::get('dashboard',function(){
+	Route::get('all', ['as' => 'all',function(){
+   	
+   	return 'all';
+	}]);
 
-		return 'admin dashboard';
-	});
-	Route::get('account',function(){
+	Route::get('hot', ['as' => 'hot',function(){
+   	
+   	return 'hot';
+	}]);
 
-	return 'admin account';
-	});
+	Route::get('featured', ['as' => 'featured',function(){
+   	
+   	return 'featured';
+	}]);
+
+	Route::get('random', ['as' => 'random',function(){
+   	
+   	return 'random';
+	}]);
 });
 
 
