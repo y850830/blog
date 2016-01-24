@@ -16,32 +16,32 @@ Route::get('/', function () {
  	
    	return view('index');
 });
-Route::get('about', function () {
+Route::get('about', ['as' => 'about' , function() {
    
  	
    	return view('about');
-});
-Route::get('service', function () {
+}]);
+Route::get('service', ['as' => 'service' , function() {
    
  	
    	return view('service');
-});
-Route::get('protfolio', function () {
+}]);
+Route::get('protfolio', ['as' => 'portfolio' , function() {
    
  	
-   	return view('protfolio');
-});
-Route::get('contact', function () {
+   	return view('portfolio');
+}]);
+Route::get('contact', ['as' => 'contact' , function() {
    
  	
    	return view('contact');
-});
+}]);
 
-Route::get('hello', function () {
+Route::get('hello', ['as' => 'about' , function() {
    
  	
    	return view('hello.hello');
-});
+}]);
 
 /*Route::pattern('id','[0-9]+');
 Route::get('post/{id?}', function ($id = '0') {
