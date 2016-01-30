@@ -14,11 +14,12 @@ class CreateBlogsTable extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('string');
-            $table->text('text',255);
+            $table->string('title');
+            $table->text('content',255);
             $table->boolean("is_feature");
             $table->integer('page_view');
-            $table->timestamps('created_at');
+            //$table->timestamps('created_at');
+            $table->timestamps('updated_at');
         });
     }
 
